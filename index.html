@@ -181,6 +181,90 @@ pre.block .muted { color: #64748b; }
 .download-card .list-check { list-style: none; padding: 0; margin: 0 0 20px; font-size: 14px; }
 .download-card .list-check li { margin-bottom: 6px; }
 .download-card .actions { margin-top: auto; }
+
+/* =========================================================
+   FOOTER / SOCIAL MEDIA / IMPRESSUM – Professional Add-on
+   ========================================================= */
+.site-footer {
+  margin-top: 55px;
+  padding: 28px 18px 10px;
+  border-top: 1px solid var(--card-border);
+  text-align: center;
+  color: var(--muted);
+}
+.footer-brand {
+  color: var(--text);
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+.footer-tagline {
+  font-size: 13px;
+  margin-bottom: 18px;
+}
+.footer-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.footer-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 14px;
+  border: 1px solid var(--card-border);
+  border-radius: 9px;
+  color: var(--earth-blue-light);
+  background: rgba(91,124,153,0.08);
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 650;
+  transition: all .2s ease;
+}
+.footer-link:hover {
+  border-color: var(--earth-clay);
+  color: var(--earth-clay);
+  transform: translateY(-1px);
+}
+.footer-copy {
+  margin-top: 18px;
+  font-size: 11px;
+  color: #64748b;
+}
+.impressum-page {
+  max-width: 760px;
+  margin: 0 auto;
+}
+.impressum-card {
+  background: var(--card);
+  border: 1px solid var(--card-border);
+  border-radius: 16px;
+  padding: 28px;
+  margin: 30px 0;
+}
+.impressum-card h2 {
+  color: var(--earth-clay);
+  margin-top: 0;
+}
+.impressum-card h3 {
+  color: var(--earth-blue-light);
+  font-size: 16px;
+  margin: 24px 0 7px;
+}
+.impressum-placeholder {
+  border-left: 3px solid var(--earth-clay);
+  padding: 10px 14px;
+  background: rgba(194,123,88,0.08);
+  border-radius: 6px;
+  color: var(--text);
+}
+.impressum-note {
+  font-size: 13px;
+  color: var(--muted);
+}
+
 </style>
 </head>
 <body>
@@ -2646,6 +2730,93 @@ Sonst: direkt beim genannten Thema oder letzten Stand einsteigen.</pre>
       <a onclick="showPage('landingpage')" class="btn-primary" style="cursor:pointer;">← Zurück zum Vergleich</a>
     </div>
   </div>
+
+
+  <!-- =====================================================
+       SEITE: IMPRESSUM
+       ===================================================== -->
+  <div id="impressum" class="page">
+    <nav class="top-nav">
+      <a class="nav-link" onclick="showPage('landingpage')">← Zurück zur Startseite</a>
+      <span class="version-tag">PROFESSIONAL V1.0</span>
+    </nav>
+
+    <section class="impressum-page">
+      <div class="hero" style="padding-bottom:10px;">
+        <span class="version-tag">RECHTLICHE INFORMATIONEN</span>
+        <h1>WooHooO <span class="clay">Impressum</span></h1>
+        <p class="hero-sub">Angaben gemäß den gesetzlichen Anforderungen für diese Website.</p>
+      </div>
+
+      <div class="impressum-card">
+        <h2>Angaben zum Anbieter</h2>
+
+        <div class="impressum-placeholder">
+          <strong>Bitte vor Veröffentlichung ausfüllen:</strong><br>
+          Dr.-Ing. Dragoslav Vucic-Seele<br>
+          Hoöderweg 43/3<br>
+          89075 Ulm<br>
+          Deutschland
+        </div>
+
+        <h3>Kontakt</h3>
+        <p>
+          E-Mail: Wwoohooo@cool.ms<br>
+         
+        </p>
+
+        <h3>Verantwortlich für den Inhalt</h3>
+        <p>
+          Dr.-Ing. Dragoslav Vucic-Seele<br>
+          Holderweg 43/3<br>
+          89075 Ulm
+        </p>
+
+        <h3>Hinweis</h3>
+        <p class="impressum-note">
+          Die in eckigen Klammern stehenden Angaben sind Platzhalter und müssen
+          vor einer öffentlichen Veröffentlichung durch die tatsächlichen
+          Anbieterangaben ersetzt werden. Diese Vorlage stellt keine
+          Rechtsberatung dar.
+        </p>
+      </div>
+
+      <div class="cta-box">
+        <h2 style="margin-top:0;">WooHooO Social</h2>
+        <p style="color:var(--muted); margin-top:0;">
+          Gitarren. Songwriting. Theorie. Praxis. Leidenschaft.
+        </p>
+        <div class="social-buttons">
+          <a href="https://youtube.com/@woohooo-guitar" target="_blank" rel="noopener" class="btn-social">
+            ▶️ WooHooO auf YouTube
+          </a>
+          <a href="https://www.instagram.com/woohooo_guitar" target="_blank" rel="noopener" class="btn-social">
+            📸 WooHooO auf Instagram
+          </a>
+        </div>
+      </div>
+    </section>
+  </div>
+
+
+  <footer class="site-footer">
+    <div class="footer-brand">WooHooO Songwriter Experience</div>
+    <div class="footer-tagline">Professional &amp; Lite · Kostenlos · Interaktiv · Sofort einsatzbereit</div>
+
+    <div class="footer-links">
+      <a class="footer-link" href="https://youtube.com/@woohooo-guitar" target="_blank" rel="noopener">
+        ▶️ YouTube
+      </a>
+      <a class="footer-link" href="https://www.instagram.com/woohooo_guitar" target="_blank" rel="noopener">
+        📸 Instagram
+      </a>
+      <a class="footer-link" href="#" onclick="showPage('impressum'); return false;">
+        ⚖️ Impressum
+      </a>
+    </div>
+
+    <div class="footer-copy">© WooHooO · Songwriter Experience · Professional v1.0</div>
+  </footer>
 
 </main>
 
